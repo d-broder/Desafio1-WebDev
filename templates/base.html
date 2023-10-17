@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>UNES - Contato</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="{{url_for('static', filename='style.css')}}"
+        />
+    </head>
+
+    <body style="background-image: url('../static/imagens/fundo2.png')">
+        <main>
+            <div class="main-container">
+                <header>
+                    <div class="header-container">
+                        <div class="logo">
+                            <img
+                                src="../static/imagens/logo.png"
+                                alt="Logo da UNES"
+                            />
+                        </div>
+                        <nav class="navbar">
+                            <ul>
+                                <a href="/">Home</a>
+                                |
+                                <a href="/quemsomos">Quem somos</a>
+                                |
+                                <a href="/contatos">Contato</a>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+                <div class="content-container">
+                    {% block content %} {% endblock %}
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <p><b>Todos os direitos reservados</b></p>
+            </div>
+        </footer>
+    </body>
+</html>

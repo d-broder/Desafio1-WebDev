@@ -1,0 +1,39 @@
+python -m venv venv
+.\venv\Scripts\activate
+pip install flask
+
+deactivate
+.\venv\Scripts\activate
+
+flask run
+flask run --host 0.0.0.0
+
+
+# Visualizar bibliotecas instaladas
+pip freeze
+
+
+
+# Executar Power Shell como administrador:
+Set-ExecutionPolicy -ExecutionPolicy AllSigned
+A
+
+
+# Criar req.txt
+pip freeze > req.txt
+
+# Instalar dependências através de req.txt
+pip install -r .\req.txt
+
+# Apagar ambiente virtual
+rm -r .\venv\
+
+
+flask --version
+
+# Alterar arquivo "app.py"
+Powershell:
+$env:FLASK_APP = "hello"
+flask run
+
+<!-- <link rel="stylesheet" href="style.css" /> -->
